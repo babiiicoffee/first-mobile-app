@@ -1,0 +1,20 @@
+<StackLayout class="form" columns="*" rows="*, 60">
+
+    <Label text="Add Person" class="h3 text-center"></Label>
+
+    <StackLayout class="input-field">
+        <TextField class="input" hint="Fullname" [(ngModel)]="name"></TextField>
+    </StackLayout>
+
+    <StackLayout class="input-field">
+        <TextField class="input" hint="Role" [(ngModel)]="role"></TextField>
+    </StackLayout>
+
+    <StackLayout class="input-field">
+        <TextField class="input" hint="Score" [(ngModel)]="score"></TextField>
+    </StackLayout>
+
+    <Button text="Submit" (tap)="onSubmit($event)" class="-outline -rounded-lg"></Button>
+    <!-- <button text="Back" class="-outline -rounded-lg" (tap)="backBtn()"></button> -->
+
+</StackLayout>

@@ -1,0 +1,21 @@
+<ActionBar title="List of People">
+</ActionBar>
+
+
+<GridLayout columns="*" rows="*,250">
+    <StackLayout col="0" row="0">
+        <!-- <button text="add member" (tap)="onTap($event)" class="-outline -rounded-lg"></button> -->
+        <ListView [items]="items">
+            <ng-template let-item="item">
+                <StackLayout>
+                    <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"></Label>
+                </StackLayout>
+            </ng-template>
+        </ListView>
+    </StackLayout>
+
+    <!-- Child component -->
+    <StackLayout col="0" row="1">
+        <ns-form (addpersonevent)="onAddPersonEvent($event)"></ns-form>
+    </StackLayout>
+</GridLayout>

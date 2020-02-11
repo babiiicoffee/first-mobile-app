@@ -1,0 +1,19 @@
+<!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
+
+<!-- <ns-grids></ns-grids> -->
+<!-- <StackLayout sdkExampleTitle sdkToggleNavButton> -->
+
+<GridLayout columns="*" rows="*, 50">
+    <StackLayout col="0" row="0">
+        <page-router-outlet></page-router-outlet>
+    </StackLayout>
+    <StackLayout col="0" row="1">
+        <Flexboxlayout>
+            <!-- <Button text="Soccer" [nsRouterLink]="['items']" class="-outline -rounded-lg" col="1" (tap)="toSoccer()"></Button>
+            <Button text="Artist" [nsRouterLink]="['artist']" class="-outline -rounded-lg" col="0" (tap)="toArtist()"></Button> -->
+            <Button text="Soccer" class="-outline -rounded-lg" col="1" (tap)="toSoccer()"></Button>
+            <Button text="Artist" class="-outline -rounded-lg" col="0" (tap)="toArtist()"></Button>
+            <Button text="Draggable" class="-outline -rounded-lg" col="0" (tap)="toDraggable()"></Button>
+        </Flexboxlayout>
+    </StackLayout>
+</GridLayout>

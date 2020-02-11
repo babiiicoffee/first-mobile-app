@@ -1,0 +1,32 @@
+<ActionBar class="actionBar" title="Artists">
+</ActionBar>
+
+<FlexboxLayout flexDirection="column" columns="*" rows="*,*">
+    <StackLayout col="0" row="0">
+        <!-- <label text="Judilyn But-anon" class="h1 text-center" style="font-family: monospace;"></label> -->
+        <!-- 
+        <Image src="https://lh3.googleusercontent.com/bFgGDiwe7a9QKsaqOsEKHU1OtFw0SKXqLUDWRtTNBsc-2JmYfeAIQKDU-JtrJwwi63atTzWdcOZ4AiKuZRlixTUz6RPjTkBCjf7PCaKYvKdLc7xYk13EBnU0R6I79p8V2FbRjG6_7v6q-4WmL8SSR6CRVmW26VSuuzHnEdchJ4kipdr9Jhx18S08UMhMX-a5_-sZRgiDQECZ7cM4iK4C56TMoFahg0JqXpeEiJo3Xs_zNROsa-jIlzM4uwLV2Z7E4k0wro4ksrt1n67UUIkL73xgecVBwUIlY7-u37nw1V7uzs9OTHyB2hkaEmdrbZbuljb8D2dj-BRBBh4_IGXmU3oliwzbAqqZaq10i2Yd6LKWNwF_sO_TZfpq1osIWP4w-rfhNs4z52QyH6WM-ma5U4lim5saLTJfZJ6DFP2MlCX-WiXEhzptgYisJwGB4UfQypUeocvE3HykjDIphy3iUziSgklIdfOMFE2PsO5Un2OvbBWvJoCtqt9hWKhlGImJhAWmqAXdsXJXJFQpjiO9cKR4NZ9raAOnaV5RFGfnq1oZyXZtFiP6y51OBEEGUXYoxDbHyVUxT4xZZWHBwuSaFb6fP-Bb1NRszKH84wWIdreyTcO7pE4anfsiJufSHfhnkVpqitGBycdNFv_5VEnhephU3G94yOWLh4OL9WuNjZsRDFJDt6ukXg=w499-h881-no"></Image> -->
+
+        <!-- <Image src="https://media1.tenor.com/images/7d5720262537b8c55364ae7a5123f2c5/tenor.gif?itemid=10766489"></Image> -->
+
+        <!-- <Image src="https://www.thefamouspeople.com/profiles/images/zhavia-vercetti-6.jpg"></Image> -->
+
+
+
+        <!-- <button text="add member" (tap)="onTap($event)" class="-outline -rounded-lg"></button> -->
+
+    </StackLayout>
+
+
+    <StackLayout col="0" row="1">
+        <!-- <ListView [items]="items">
+            <ng-template let-item="item">
+                <StackLayout>
+                    <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"></Label>
+                </StackLayout>
+            </ng-template>
+        </ListView> -->
+        <ns-items [items]="items"></ns-items>
+    </StackLayout>
+
+</FlexboxLayout>

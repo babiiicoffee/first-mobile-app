@@ -1,0 +1,10 @@
+/* Add mobile styles for the component here.  */
+
+.form {
+    color: black;
+    background-color: deeppink;
+}
+
+label {
+    color: black;
+}
